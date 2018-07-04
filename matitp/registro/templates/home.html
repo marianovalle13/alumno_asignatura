@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Lolos Page</title>
+	</head>
+
+	<body>
+		<ul>
+			<h1>Asignaturas</h1>
+				{%for asignatura in asignaturas%}
+					<li><a href="{% url 'alumno' asignatura.id %}">{{asignatura}}</a></li>
+				{%endfor%}
+		</ul>
+			
+</body>
+</html>
